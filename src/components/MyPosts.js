@@ -8,10 +8,14 @@ import history from '../history.js'
 
 async function getData(userId) {
   let res = await axios.post("https://z-prefix.herokuapp.com/getUsersPosts", { userId });
+  console.log('server response for users posts', res.data)
   return res.data;
 }
 
 export default function MyPosts({ userId, data, setData }) {
+  console.log('props userId', userId)
+  console.log('props data', data)
+  console.log('props setData', setData)
   let [usersPosts, setUsersPosts] = useState([]);
   history.push('/myposts')
   useEffect(() => {
