@@ -18,14 +18,14 @@ import {
 } from "@mui/material";
 
 async function getData(userId) {
-  let res = await axios.post("http://localhost:3001/getUsersPosts", {
+  let res = await axios.post("https://z-prefix-backend.herokuapp.com/getUsersPosts", {
     userId,
   });
   return res.data;
 }
 
 async function deletePost(postId) {
-  let res = await axios.delete(`http://localhost:3001/delete/${postId}`);
+  let res = await axios.delete(`https://z-prefix-backend.herokuapp.com/delete/${postId}`);
   return res.data;
 }
 

@@ -39,7 +39,7 @@ export default function Create(userId) {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post(`http://localhost:3001/create`, {
+      .post(`https://z-prefix-backend.herokuapp.com/create`, {
         title,
         body,
         userId,

@@ -7,7 +7,7 @@ import "./Public.css";
 import history from '../history.js'
 
 async function getData() {
-  let res = await axios.get("http://localhost:3001/posts");
+  let res = await axios.get("https://z-prefix-backend.herokuapp.com/posts");
   return res.data;
 }
 

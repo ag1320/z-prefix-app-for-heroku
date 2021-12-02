@@ -7,7 +7,7 @@ import Post from './Post.js'
 import history from '../history.js'
 
 async function getData(userId) {
-  let res = await axios.post("http://localhost:3001/getUsersPosts", { userId });
+  let res = await axios.post("https://z-prefix-backend.herokuapp.com/getUsersPosts", { userId });
   return res.data;
 }
 

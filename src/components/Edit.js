@@ -5,7 +5,7 @@ import { useState } from "react";
 import history from "../history.js";
 
 async function patchData(title, body, postId) {
-  let res = await axios.patch("http://localhost:3001/patch", {
+  let res = await axios.patch("https://z-prefix-backend.herokuapp.com/patch", {
     title,
     body,
     postId,

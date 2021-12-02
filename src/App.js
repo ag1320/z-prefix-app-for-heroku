@@ -53,7 +53,7 @@ function App() {
       endpoint = "login";
     }
     axios
-      .post(`http://localhost:3001/${endpoint}`, {
+      .post(`https://z-prefix-backend.herokuapp.com/${endpoint}`, {
         username,
         password,
       })
